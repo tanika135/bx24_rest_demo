@@ -49,7 +49,8 @@ class MyClass
                 [
                     "id" => $dealId["result"][0]["ID"],
                     'fields' => [
-                        'CRM_ORDER_PAID' => true, //свойство заказа "Оплачено"
+                        CRM_ORDER_PAID => true, //свойство заказа "Оплачено"
+                        CRM_DATETIME_PAYMENT =>  date("Y-m-d H:i:s", time()),
                     ],
                 ]);
         }

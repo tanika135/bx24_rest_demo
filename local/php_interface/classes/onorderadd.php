@@ -49,7 +49,7 @@ class OnOrderAdd
             'crm.deal.add',
             [
                 'fields' => [
-                    'UF_CRM_1728031505172' => $orderId, //id заказа
+                    CRM_ORDER_ID => $orderId, //id заказа
                     'TITLE' => 'Заказ № '. $orderId,
                     'IS_NEW' => 'Y',
                     "CONTACT_ID" => $contactId,
